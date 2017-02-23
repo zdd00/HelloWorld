@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>一款带缩略图及左右按钮的jQuery相册特效</title>
+<meta name="keywords" content="网页特效,jQuery特效,jquery相册,多图相册js,js相册代码下载" />
+<meta name="description" content="一款带缩略图及左右按钮渐变切换的jQuery相册特效，带左右按钮，透明渐变切换，效果柔和、流畅。">
+<link rel="stylesheet" href="css/DB_gallery.css" type="text/css">
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.DB_gallery.js"></script>
+</head>
+<body class="keBody">
+<h1 class="keTitle">一款带缩略图及左右按钮的jQuery相册特效</h1>
+<div class="kePublic">
+<!--效果html开始-->
+  <div id="DB_gallery">
+    <div class="DB_imgSet">
+      <div class="DB_imgWin"><img src="images/img1.jpg" alt=""/></div>
+      <div class="DB_page"><span class="DB_current">0</span>-<span class="DB_total">0</span></div>
+      <div class="DB_prevBtn"><img src="images/prev_off.png" alt="jquery相册"/></div>
+      <div class="DB_nextBtn"><img src="images/next_off.png" alt="图片相册"/></div>
+    </div>
+    <div class="DB_thumSet">
+      <ul class="DB_thumMove">
+        <li><a href="images/img1.jpg"><img src="images/thum1.jpg" alt="图片相册"/></a></li>
+        <li><a href="images/img2.jpg"><img src="images/thum2.jpg" alt="jquery相册"/></a></li>
+        <li><a href="images/img3.jpg"><img src="images/thum3.jpg" alt="图片相册"/></a></li>
+        <li><a href="images/img4.jpg"><img src="images/thum4.jpg" alt="jquery相册"/></a></li>
+        <li><a href="images/img5.jpg"><img src="images/thum5.jpg" alt="图片相册"/></a></li>
+        <li><a href="images/img6.jpg"><img src="images/thum6.jpg" alt="素材库"/></a></li>
+        <li><a href="images/img1.jpg"><img src="images/thum1.jpg" alt="jquery相册"/></a></li>
+        <li><a href="images/img2.jpg"><img src="images/thum2.jpg" alt=""/></a></li>
+        <li><a href="images/img3.jpg"><img src="images/thum3.jpg" alt=""/></a></li>
+        <li><a href="images/img4.jpg"><img src="images/thum4.jpg" alt=""/></a></li>
+        <li><a href="images/img5.jpg"><img src="images/thum5.jpg" alt="网页特效"/></a></li>
+        <li><a href="images/img6.jpg"><img src="images/thum6.jpg" alt=""/></a></li>
+      </ul>
+      <div class="DB_thumLine"></div>
+      <div class="DB_prevPageBtn"><img src="images/prev_page.png" alt="上一页"/></div>
+      <div class="DB_nextPageBtn"><img src="images/next_page.png" alt="下一页"/></div>
+    </div>
+  </div>
+  <script type="text/javascript">
+	$('#DB_gallery').DB_gallery({
+		thumWidth:110,            
+		thumGap:8,                
+		thumMoveStep:4,           
+		moveSpeed:300,            
+		fadeSpeed:500            
+	});
+</script>
+<!--效果html结束-->
+</div>
+<div class="keBottom">
+<p class="keTxtP">科e互联网页特效集锦---更多特效请访问 <a class="keUrl" href="http://www.internetke.com" target="_blank">www.internetke.com</a></p>
+<p class="keTxtP">本站导航：
+<a href="http://www.internetke.com/" target="_blank" class="cor_bs">网站建设</a> | 
+<a href="http://www.internetke.com/material/" target="_blank" class="cor_bs">网页素材</a> | 
+<a href="http://www.internetke.com/effects/" target="_blank" class="cor_bs">网页特效</a> | 
+<a href="http://www.internetke.com/share/" target="_blank" class="cor_bs">设计分享</a> | 
+<a href="http://www.internetke.com/tutorial/" target="_blank" class="cor_bs">建站教程</a> | 
+<a href="http://www.internetke.com/model/" target="_blank" class="cor_bs">网站模版</a> | 
+<a href="http://www.internetke.com/appreciate/" target="_blank" class="cor_bs">酷站赏析</a>
+</p>
+<p class="keTxtP">＊尊重他人劳动成果，转载请自觉注明出处！注：此代码为【科e整理/原创特效】仅供学习交流，请勿用于商业用途。
+<a target="_blank" href="http://wp.qq.com/wpa/qunwpa?idkey=a7df3558c291e0407375b9ad649d96a6e507286ffeb0650c65a221d1500a0779" class="button red" title="北京网站建设,网页特效QQ交流群-科e互联">加入QQ交流群</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+﻿
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>jeDate日期控件</title>
+<script type="text/javascript" src="jedate/jedate.js"></script>
+<link type="text/css" rel="stylesheet" href="jedate/skin/jedate.css">
+</head>
+
+<body class="bodys">
+<div style="width:100%; margin-bottom:50px; overflow:hidden;">
+	<input class="datainp datep" type="text" placeholder=""  readonly>
+<div class="discls" style="float:left;margin-right:5px;"></div>
+</div>
+
+<script type="text/javascript">
+jeDate({
+	dateCell:"input.datep",  
+	format:"YYYY-MM-DD",
+	minDate:"2015-09-19",
+	isinitVal:true,
+	ishmsLimit:true,
+	isDisplay:true,
+    displayCell:".discls",
+	isTime:false, 
+	festival: true, //显示节日	
+})
+
+</script>
+
+</body>
+</html>
